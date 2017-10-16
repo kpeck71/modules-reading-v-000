@@ -3,7 +3,7 @@ require_relative './dance_module.rb'
 
 class Dancer
   include Dance #use all of the methods of the included Dance module as instance methods.
-  extend MetaDancing
+  extend MetaDancing #In order to lend a module's methods to a class as class methods, we use the extend keyword.
 
   attr_accessor :name
 
